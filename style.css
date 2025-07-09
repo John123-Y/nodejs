@@ -1,0 +1,722 @@
+John Great, [28/06/2025 6:14 am]
+<antArtifact identifier="css-file" type="application/vnd.ant.code" language="css" title="styles.css" version_uuid="b2c3d4e5-6f78-8901-bcde-2345678901bc">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.2), rgba(147, 51, 234, 0.2));
+    z-index: 1;
+}
+
+.hero-bg-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.bg-circle-1 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 18rem;
+    height: 18rem;
+    background: rgba(147, 51, 234, 0.1);
+    border-radius: 50%;
+    filter: blur(3rem);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.bg-circle-2 {
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+    width: 24rem;
+    height: 24rem;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    filter: blur(3rem);
+    animation: pulse 4s ease-in-out infinite 2s;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-avatar {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto 2rem;
+    background: linear-gradient(135deg, #7c3aed, #3b82f6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.hero-avatar i {
+    font-size: 4rem;
+    color: white;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #ffffff, #bfdbfe, #c4b5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: #d1d5db;
+    margin-bottom: 2rem;
+}
+
+.role-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.role-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.role-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-indicator {
+    animation: bounce 2s ease-in-out infinite;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 2rem;
+}
+
+/* Section Styles */
+.section {
+    padding: 5rem 0;
+}
+
+.section.dark {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* About Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.about-text {
+    font-size: 1.125rem;
+    color: #d1d5db;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.role-cards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.role-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.role-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+John Great, [28/06/2025 6:14 am]
+.role-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.role-card-icon {
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #7c3aed, #3b82f6);
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}
+
+.role-card-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.role-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.role-card-desc {
+    color: #d1d5db;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.skill-percentage {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 0.75rem;
+    background: #374151;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 0.5rem;
+    transition: width 2s ease-out;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    width: 0%;
+}
+
+.skill-progress.nodejs { background: linear-gradient(135deg, #10b981, #059669); }
+.skill-progress.react { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.skill-progress.tailwind { background: linear-gradient(135deg, #06b6d4, #0891b2); }
+.skill-progress.react-native { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+.skill-progress.html { background: linear-gradient(135deg, #f97316, #ea580c); }
+.skill-progress.css { background: linear-gradient(135deg, #ec4899, #db2777); }
+
+.current-skill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #059669, #3b82f6);
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+.status-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #10b981;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Organizations Section */
+.org-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .org-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.org-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.org-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+}
+
+.org-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(59, 130, 246, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.org-card:hover::before {
+    opacity: 1;
+}
+
+.org-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.org-icon.superteam { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+.org-icon.glosolan { background: linear-gradient(135deg, #3b82f6, #1e40af); }
+.org-icon.authority { background: linear-gradient(135deg, #10b981, #047857); }
+
+.org-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.org-role {
+    color: #d1d5db;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+John Great, [28/06/2025 6:14 am]
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.portfolio-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(59, 130, 246, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover::before {
+    opacity: 1;
+}
+
+.portfolio-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(135deg, #7c3aed, #3b82f6);
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-desc {
+    color: #d1d5db;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.portfolio-link:hover {
+    color: #7c3aed;
+}
+
+/* Contact Section */
+.contact-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-subtitle {
+    font-size: 1.25rem;
+    color: #d1d5db;
+    margin-bottom: 3rem;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #7c3aed, #3b82f6);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(147, 51, 234, 0.4);
+    color: white;
+}
+
+/* Footer */
+.footer {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.footer-brand h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    color: #9ca3af;
+}
+
+/* Footer Contact Form */
+.footer-contact {
+    max-width: 400px;
+    width: 100%;
+}
+
+.footer-contact h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form .cta-button {
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+John Great, [28/06/2025 6:14 am]
+.form-message {
+    text-align: center;
+    color: #10b981;
+    font-size: 1rem;
+    margin-top: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.form-message.show {
+    opacity: 1;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #9ca3af;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #9ca3af;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40%, 43% {
+        transform: translateY(-10px);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+    90% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Utility Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .role-tags {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .role-tag {
+        width: fit-content;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact {
+        margin: 2rem 0;
+    }
+}
+</antArtifact>
