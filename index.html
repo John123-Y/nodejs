@@ -1,367 +1,145 @@
-<antArtifact identifier="html-file" type="application/vnd.ant.code" language="html" title="index.html" version_uuid="a1b2c3d4-5e6f-7890-abcd-1234567890ab"> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3 Developer Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Men of Authority - Empowering the Male Child">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Men of Authority</title>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg-elements">
-            <div class="bg-circle-1"></div>
-            <div class="bg-circle-2"></div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="Men of Authority" class="logo">
+        <span>Men of Authority</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <svg class="hamburger-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="programs.html" class="nav-link">Programs</a>
+      <a href="get-involved.html" class="nav-link">Get Involved</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Empowering the Male Child for a Stronger Tomorrow</h1>
+      <p>Join us in building confident, resilient, and purposeful young men.</p>
+      <a href="get-involved.html" class="btn btn-primary">Get Involved</a>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>Men of Authority is dedicated to nurturing confidence, leadership, and resilience in young men through mentorship, education, and community support.</p>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="programs">
+    <h2>Our Programs</h2>
+    <div class="programs-grid">
+      <div class="program-card">
+        <h3>Mentorship Program</h3>
+        <p>Pairing young men with role models to guide their personal and professional growth.</p>
+        <a href="programs.html" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div class="program-card">
+        <h3>Mental Health Workshops</h3>
+        <p>Providing tools and support for emotional well-being.</p>
+        <a href="programs.html" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div class="program-card">
+        <h3>Career Guidance</h3>
+        <p>Helping boys explore career paths and develop skills.</p>
+        <a href="programs.html" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="quote">"This program changed my life by giving me the confidence to pursue my dreams."</p>
+        <p class="author">— John D.</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">"As a parent, I’ve seen my son grow into a responsible young man thanks to Men of Authority."</p>
+        <p class="author">— Sarah P.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <h2>Join Our Mission</h2>
+    <p>Support our work by donating, volunteering, or spreading the word.</p>
+    <div class="cta-buttons">
+      <a href="get-involved.html" class="btn btn-primary">Donate Now</a>
+      <a href="get-involved.html" class="btn btn-white">Volunteer</a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Men of Authority</h3>
+        <p>Empowering the male child for a stronger tomorrow.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@menofauthority.org</p>
+        <p>Phone: +123-456-7890</p>
+        <div class="social-links">
+          <a href="https://x.com" target="_blank">X</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
         </div>
-        
-        <div class="hero-content">
-            <div class="hero-avatar">
-                <i class="fas fa-code"></i>
-            </div>
-            
-            <h1 class="hero-title">Web3 Developer</h1>
-            
-            <p class="hero-subtitle">
-                Building the future of the web with cutting-edge technologies
-            </p>
-            
-            <div class="role-tags">
-                <div class="role-tag">
-                    <i class="fas fa-code"></i>
-                    <span>Web Developer</span>
-                </div>
-                <div class="role-tag">
-                    <i class="fas fa-globe"></i>
-                    <span>Web3 Enthusiast</span>
-                </div>
-                <div class="role-tag">
-                    <i class="fas fa-pen"></i>
-                    <span>Web3 Content Writer</span>
-                </div>
-                <div class="role-tag">
-                    <i class="fas fa-brain"></i>
-                    <span>AI Annotation Specialist</span>
-                </div>
-            </div>
-            
-            <i class="fas fa-chevron-down scroll-indicator"></i>
-        </div>
-    </section>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Men of Authority. All rights reserved.</p>
+  </footer>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="fade-in">
-                <h2 class="section-title">About Me</h2>
-                
-                <div class="about-grid">
-                    <div>
-                        <p class="about-text">
-                            I'm a passionate web developer and Web3 enthusiast dedicated to building innovative solutions 
-                            that bridge traditional web development with decentralized technologies. My expertise spans 
-                            across full-stack development, content creation, and AI annotation.
-                        </p>
-                        
-                        <p class="about-text">
-                            As a content writer in the Web3 space, I help translate complex blockchain concepts into 
-                            accessible content. My technical background allows me to create content that's both 
-                            accurate and engaging for diverse audiences.
-                        </p>
-                    </div>
-                    
-                    <div class="role-cards">
-                        <div class="role-card">
-                            <div class="role-card-header">
-                                <div class="role-card-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <div>
-                                    <h3 class="role-card-title">Web Developer</h3>
-                                    <p class="role-card-desc">Building modern, responsive web applications with cutting-edge technologies</p>
-                                </div>
-                            </div>
-                        </div>
+  <script src="js/script.js"></script>
 
-
-<div class="role-card">
-                            <div class="role-card-header">
-                                <div class="role-card-icon">
-                                    <i class="fas fa-globe"></i>
-                                </div>
-                                <div>
-                                    <h3 class="role-card-title">Web3 Enthusiast</h3>
-                                    <p class="role-card-desc">Passionate about decentralized technologies and blockchain innovation</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="role-card">
-                            <div class="role-card-header">
-                                <div class="role-card-icon">
-                                    <i class="fas fa-pen"></i>
-                                </div>
-                                <div>
-                                    <h3 class="role-card-title">Web3 Content Writer</h3>
-                                    <p class="role-card-desc">Creating compelling content about blockchain, DeFi, and Web3 ecosystems</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="role-card">
-                            <div class="role-card-header">
-                                <div class="role-card-icon">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <div>
-                                    <h3 class="role-card-title">AI Annotation Specialist</h3>
-                                    <p class="role-card-desc">Enhancing AI models through precise data annotation and quality control</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section dark" id="skills">
-        <div class="container">
-            <div class="fade-in">
-                <h2 class="section-title">Technical Skills</h2>
-                
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <h3 class="skill-name">Node.js</h3>
-                            <span class="skill-percentage">100%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress nodejs" data-width="100"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <h3 class="skill-name">React.js</h3>
-                            <span class="skill-percentage">100%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress react" data-width="100"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <h3 class="skill-name">Tailwind CSS</h3>
-                            <span class="skill-percentage">100%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress tailwind" data-width="100"></div>
-                        </div>
-                    </div>
-
-
-<div class="skill-card">
-                        <div class="skill-header">
-                            <h3 class="skill-name">React Native</h3>
-                            <span class="skill-percentage">100%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress react-native" data-width="100"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <h3 class="skill-name">HTML</h3>
-                            <span class="skill-percentage">100%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress html" data-width="100"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <h3 class="skill-name">CSS</h3>
-                            <span class="skill-percentage">100%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress css" data-width="100"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-center">
-                    <div class="current-skill">
-                        <span class="status-dot"></span>
-                        <span>Currently mastering: <span id="current-skill-text">Node.js</span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Organizations Section -->
-    <section class="section" id="organizations">
-        <div class="container">
-            <div class="fade-in">
-                <h2 class="section-title">Professional Affiliations</h2>
-                
-                <div class="org-grid">
-                    <div class="org-card">
-                        <div class="org-icon superteam">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3 class="org-name">SuperteamNG</h3>
-                        <p class="org-role">Member</p>
-                    </div>
-                    
-                    <div class="org-card">
-                        <div class="org-icon glosolan">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3 class="org-name">Glosolan Technology</h3>
-                        <p class="org-role">Member</p>
-                    </div>
-                    
-                    <div class="org-card">
-                        <div class="org-icon authority">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3 class="org-name">Men of Authority</h3>
-                        <p class="org-role">Member</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section dark" id="portfolio">
-        <div class="container">
-            <div class="fade-in">
-                <h2 class="section-title">Portfolio</h2>
-                
-                <div class="portfolio-grid">
-                    <div class="portfolio-card">
-                        <div class="portfolio-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <h3 class="portfolio-title">Decentralized Voting App</h3>
-                        <p class="portfolio-desc">
-                            A Web3 voting application built with Ethereum smart contracts and React, ensuring transparent and secure voting.
-
-
-</p>
-                        <a href="https://github.com/your-username/voting-dapp" class="portfolio-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Project
-                        </a>
-                    </div>
-                    
-                    <div class="portfolio-card">
-                        <div class="portfolio-icon">
-                            <i class="fas fa-wallet"></i>
-                        </div>
-                        <h3 class="portfolio-title">NFT Marketplace</h3>
-                        <p class="portfolio-desc">
-                            A decentralized marketplace for trading NFTs, built with Solidity, IPFS, and Node.js for a seamless user experience.
-                        </p>
-                        <a href="https://github.com/your-username/nft-marketplace" class="portfolio-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Project
-                        </a>
-                    </div>
-                    
-                    <div class="portfolio-card">
-                        <div class="portfolio-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3 class="portfolio-title">Web3 Mobile Wallet</h3>
-                        <p class="portfolio-desc">
-                            A React Native mobile app for managing crypto assets, integrated with Web3.js for blockchain interactions.
-                        </p>
-                        <a href="https://github.com/your-username/web3-wallet" class="portfolio-link" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section dark" id="contact">
-        <div class="container">
-            <div class="contact-content fade-in">
-                <h2 class="section-title">Let's Connect</h2>
-                
-                <p class="contact-subtitle">
-                    Ready to collaborate on your next Web3 project or discuss innovative ideas?
-                </p>
-                
-                <a href="mailto:your-email@example.com" class="cta-button">
-                    <i class="fas fa-envelope"></i>
-                    <span>Get In Touch</span>
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Web3 Developer</h3>
-                    <p>Building the decentralized future</p>
-                </div>
-
-                <div class="footer-contact">
-                    <h3>Contact Me</h3>
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">
-                            <i class="fas fa-paper-plane"></i>
-                            <span>Send Message</span>
-                        </button>
-                    </form>
-                    <p id="form-message" class="form-message"></p>
-                </div>
-
-
-<div class="social-links">
-                    <a href="https://twitter.com/your-username" class="social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/your-username" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/your-username" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>© 2024 Web3 Developer Portfolio. Built with HTML, CSS & JavaScript.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=your-tracking-id"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'your-tracking-id');
+</script>
 </body>
 </html>
-</antArtifact>
